@@ -1,0 +1,161 @@
+
+UNITY_PROJECTS_PATH="/mnt/c/unity-projects"
+CARBON_RESET_PROJECT_PATH="$UNITY_PROJECTS_PATH/skrpg"
+CARBON_RESET_BUILD_PATH="$CARBON_RESET_PROJECT_PATH/Builds"
+CARBON_RESET_UNITY_VERSION="2019.3.10f1"
+
+for f in $HOME/bash-config-win-subsystem/bash-scripts/*; do source $f; done
+
+# Various self-explanatory aliases
+
+alias edit='code'
+
+alias v='code'
+
+# Bash Profile Stuff
+
+# NOTE: changed to bashrc since windows subsys ubuntu does not use bash_profile by default.
+alias bp='edit ~/.bashrc'
+
+alias rbp='source ~/.bashrc'
+
+alias l="ls -lah"
+
+# Git Commands
+
+alias gco="git checkout --ours"
+
+alias gct="git checkout --theirs"
+
+alias gcl="git clone"
+
+alias gi="gitignore"
+
+alias gm="git merge"
+
+alias gad="git add ."
+
+alias ga="git add"
+
+alias gd="git diff"
+
+alias gr='git reset'
+
+alias gaa="git add -A"
+
+alias s="git status"
+
+alias gl="git log --graph --oneline --all -n 10"
+
+alias gcm='git commit -m'
+
+alias gsur='git submodule update --recursive'
+
+alias gclef='git clean -f'
+
+alias gclefd='git clean -fd'
+
+alias gst='git stash'
+
+# First time you clone, if there is a
+# submodule, ALWAYS call this immediately after
+
+alias gsuir='git submodule update --init --recursive'
+
+# Git Pushing
+
+alias ps="git push"
+
+alias pso="git push origin"
+
+alias psom="git push origin master"
+
+alias psoh="git push origin HEAD"
+
+# Git Pulling
+
+alias pu="git pull"
+
+alias puo="git pull origin"
+
+alias puom="git pull origin master"
+
+alias puoh="git pull origin HEAD"
+
+# Git Branching
+
+alias gc="git checkout"
+
+alias gbl="git branch --list"
+
+alias gb="git branch"
+
+# quick move to personal project directories
+
+alias cdsk="cd /mnt/c/unity-projects/skrpg"
+
+alias cdu="cd /mnt/c/unity-projects"
+
+alias cdsa="cd /mnt/c/unity-projects/spaceautochess2"
+
+# Heroku Deployment Commands
+
+alias hr="heroku run"
+
+# Rake Commands
+
+# Precompiles assets because heroku doesn't do it
+
+alias rap="rake assets:precompile"
+
+# Rake DB manipulation commands
+
+alias rdm="rake db:migrate"
+
+alias rds="rake db:setup"
+
+alias rdr="rake db:reset"
+
+alias rdsd="rake db:seed"
+
+# Ruby Bundler Gem Commands
+
+alias bi='bundle install'
+
+alias ber='bundle exec rspec'
+
+alias be='bundle exec'
+
+alias berml='bundle exec rake db:migrate db:test:load'
+
+# Rails generation controls
+
+alias rgm="rails generate model"
+
+alias rgmi="rails generate migration"
+
+alias rgc="rails generate controller"
+
+# Opens a new terminal in same directory
+
+# Typically used to create an idling terminal on the side
+
+alias termhere='open -a Terminal "`pwd`"'
+
+# NPM aliases
+
+alias npms='npm start'
+
+alias npmi='npm install'
+
+alias rnri='react-native run-ios'
+
+alias rbs='git rebase'
+
+alias urcr="eval $CARBON_RESET_BUILD_PATH"
+
+alias cdcr="cd $CARBON_RESET_PROJECT_PATH"
+
+#-serial SB-XXXX-XXXX-XXXX-XXXX-XXXX -username 'JoeBloggs@example.com' -password 'MyPassw0rd
+
+alias e="exit"
