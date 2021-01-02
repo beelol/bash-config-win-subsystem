@@ -92,8 +92,6 @@ alias gb="git branch"
 
 # quick move to personal project directories
 
-alias cdsk="cd /mnt/c/unity-projects/skrpg"
-
 alias cdu="cd /mnt/c/unity-projects"
 
 alias cdsa="cd /mnt/c/unity-projects/spaceautochess2"
@@ -156,6 +154,17 @@ alias urcr="eval $CARBON_RESET_BUILD_PATH"
 
 alias cdcr="cd $CARBON_RESET_PROJECT_PATH"
 
+# carbon reset start work
+alias cs="cdcr && ucr"
+
 #-serial SB-XXXX-XXXX-XXXX-XXXX-XXXX -username 'JoeBloggs@example.com' -password 'MyPassw0rd
 
 alias e="exit"
+
+# windows application helpers
+
+# open file explorer [REQUIRES explorer.exe in PATH]
+alias o="explorer.exe"
+
+# open rider (JetBrains C# IDE) [REQUIRES rider.exe in PATH]
+alias r="rider64.exe"
