@@ -154,8 +154,11 @@ alias urcr="eval $CARBON_RESET_BUILD_PATH"
 
 alias cdcr="cd $CARBON_RESET_PROJECT_PATH"
 
+# open rider (JetBrains C# IDE) [REQUIRES rider.exe in PATH]
+alias r="rider64.exe &"
+
 # carbon reset start work
-alias cs="cdcr && ucr"
+alias cs="rider64.exe &>/dev/null & cdcr & ucr"
 
 #-serial SB-XXXX-XXXX-XXXX-XXXX-XXXX -username 'JoeBloggs@example.com' -password 'MyPassw0rd
 
@@ -165,6 +168,3 @@ alias e="exit"
 
 # open file explorer [REQUIRES explorer.exe in PATH]
 alias o="explorer.exe"
-
-# open rider (JetBrains C# IDE) [REQUIRES rider.exe in PATH]
-alias r="rider64.exe"
