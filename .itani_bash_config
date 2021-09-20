@@ -41,11 +41,13 @@ alias gd="git diff"
 
 alias gr='git reset'
 
+alias gf='git fetch'
+
 alias gaa="git add -A"
 
 alias s="git status"
 
-alias gl="git log --graph --oneline --all -n 10"
+alias gl="git log --graph --oneline -n 10"
 
 alias gcm='git commit -m'
 
@@ -54,6 +56,9 @@ alias gsur='git submodule update --recursive'
 alias gclef='git clean -f'
 
 alias gclefd='git clean -fd'
+
+# Git Wipe All
+alias gwa='git clean -f && git clean -fd && git checkout .'
 
 alias gst='git stash'
 
