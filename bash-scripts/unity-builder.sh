@@ -3,9 +3,8 @@ APP_NAME=carbonreset
 
 function bcrw {
     if [ -d "$CR_BUILD_DIR" ]; then rm -Rf $CR_BUILD_DIR; fi
-    echo Enter Unity ID password:
-    read -s PASSWORD
-    /mnt/c/Program\ Files/Unity/Hub/Editor/$CARBON_RESET_UNITY_VERSION/Editor/Unity.exe -batchmode -serial SB-PPED-6UXY-UZCQ-7TAP-SMQS -username bilalitani1@gmail.com -password $PASSWORD -buildWindows64Player /unity-projects/crbuilds/$APP_NAME.exe -logfile crbuildlog.txt -quit
+    mkdir -p $CR_BUILD_DIR
+    /mnt/c/Program\ Files/Unity/Hub/Editor/$CARBON_RESET_UNITY_VERSION/Editor/Unity.exe -batchmode -serial SB-PPED-6UXY-UZCQ-7TAP-SMQS -username bilalitani1@gmail.com -buildWindows64Player $CR_BUILD_DIR/$APP_NAME.exe -logfile crbuildlog.txt -quit
 }
 
 function rcrb {
